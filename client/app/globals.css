@@ -1,0 +1,159 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-space-grotesk), ui-monospace, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-cyan: var(--cyan);
+  --color-leaf: var(--leaf);
+  --color-surface: var(--surface);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Dark botanical intelligence palette */
+  --background: #06110d;
+  --foreground: #e8f1ea;
+  --surface: #0b1813;
+  --card: #0b1813;
+  --card-foreground: #e8f1ea;
+  --popover: #0b1813;
+  --popover-foreground: #e8f1ea;
+
+  --primary: #19c37d;
+  --primary-foreground: #04120b;
+  --leaf: #74e39a;
+  --cyan: #5de1e6;
+
+  --secondary: #123c2a;
+  --secondary-foreground: #d8efe0;
+  --muted: #0f221a;
+  --muted-foreground: #8ba79a;
+  --accent: #5de1e6;
+  --accent-foreground: #04120b;
+
+  --destructive: #ff5c5c;
+  --destructive-foreground: #1a0606;
+
+  --border: rgba(116, 227, 154, 0.12);
+  --input: rgba(116, 227, 154, 0.14);
+  --ring: #19c37d;
+
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply bg-background;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--primary) 35%, transparent);
+    color: var(--foreground);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@layer utilities {
+  /* Ambient grain / atmosphere helpers */
+  .bg-grid {
+    background-image: linear-gradient(
+        to right,
+        rgba(116, 227, 154, 0.045) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(116, 227, 154, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+  .text-glow {
+    text-shadow: 0 0 24px color-mix(in oklab, var(--primary) 45%, transparent);
+  }
+  .ring-glow {
+    box-shadow: 0 0 0 1px rgba(116, 227, 154, 0.18),
+      0 20px 60px -20px rgba(25, 195, 125, 0.35);
+  }
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+}
+
+@keyframes arbor-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes arbor-pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+@keyframes arbor-scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
