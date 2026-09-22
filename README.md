@@ -1,6 +1,6 @@
 # 🌳 ARBOR AI
 
-> **AI-Powered Tree Health Monitoring System** — a full-stack application that analyzes tree images using AI and generates structured health insights, potential problems, recommendations, and treatment guidance.
+> **AI-Powered Tree Health Management System** — a full-stack application that analyzes tree images using AI and generates structured health insights, potential problems, recommendations, and treatment guidance.
 
 ---
 
