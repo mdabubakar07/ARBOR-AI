@@ -128,7 +128,7 @@ PORT=3001
 GEMINI_API_KEY      API key used for Gemini AI analysis
 PORT                Backend server port
 
-**🔒 Security Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.**
+🔒 Security Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.
 ---
 
 ---
@@ -153,7 +153,7 @@ Frontend runs at: http://localhost:3000
 ---
 
 ### 📋 Step-by-Step Execution Summary
-1.Clone the repository.
+**1.Clone the repository.**
 2.Install frontend and backend dependencies.
 3.Create server/.env and add your valid Gemini API key.
 4.Open Terminal 1, navigate to server, and start the backend with node server.js.
