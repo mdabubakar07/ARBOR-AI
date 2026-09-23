@@ -93,6 +93,7 @@ git --version
 ```bash
 git clone [https://github.com/mdabubakar07/ARBOR-AI.git](https://github.com/mdabubakar07/ARBOR-AI.git)
 cd ARBOR-AI
+```
 
 ###2. Install Dependencies
 
