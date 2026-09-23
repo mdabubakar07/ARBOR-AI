@@ -110,7 +110,7 @@ cd server
 npm install
 cd ..
 ```
-##3. Configure Environment Variables
+###3. Configure Environment Variables
 
 Create a `server/.env` file based on `server/.env.example`:
 
