@@ -110,12 +110,11 @@ cd server
 npm install
 cd ..
 ```
+**3. Configure Environment Variables**
 
-###3. Configure Environment Variables
+Create a `server/.env` file based on `server/.env.example`:
 
-Create a server/.env file based on server/.env.example:
-```bash
-Code snippet
+```env
 GEMINI_API_KEY=your_gemini_api_key_here
 PORT=3001
 ```
