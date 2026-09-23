@@ -45,7 +45,7 @@ ARBOR AI combines a modern Next.js frontend with a Node.js/Express backend and t
 ---
 
 ## 📁 Project Structure
-
+```text
 
 ARBOR-AI/
 ├── client/                 # Next.js frontend
@@ -64,7 +64,7 @@ ARBOR-AI/
 │
 ├── .gitignore
 └── README.md
-
+```
 ---
 
 ##⚙️ Prerequisites
