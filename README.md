@@ -120,9 +120,11 @@ PORT=3001
 
 ---
 
-###Variable          Description
+### Variable          Description
+```bash
 GEMINI_API_KEY    API key used for Gemini AI analysisPORTBackend server port🔒 Security
-Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.
+```
+**Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.**
 
 ---
 
