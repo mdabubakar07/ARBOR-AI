@@ -65,6 +65,8 @@ ARBOR-AI/
 ├── .gitignore
 └── README.md
 
+---
+
 ⚙️ Prerequisites
 Install the following software before running ARBOR AI:
 
@@ -80,6 +82,8 @@ Verify installations using your terminal:
 node --version
 npm --version
 git --version
+
+---
 
 ⚡ Quick Start
 1. Clone the Repository
@@ -109,8 +113,12 @@ PORT=3001
 VariableDescriptionGEMINI_API_KEYAPI key used for Gemini AI analysisPORTBackend server port🔒 Security
 Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.
 
+---
+
 ▶️ Running ARBOR AI
 ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:
+
+---
 
 ⚙️ Prerequisites
 Install the following software before running ARBOR AI:
@@ -127,6 +135,8 @@ Verify installations using your terminal:
 node --version
 npm --version
 git --version
+
+---
 
 ⚡ Quick Start
 1. Clone the Repository
@@ -155,7 +165,10 @@ Variable             	Description
 GEMINI_API_KEY      API key used for Gemini AI analysis
 PORT                Backend server port
 
+---
 🔒 Security Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.
+
+---
 
 ▶️ Running ARBOR AI
 ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:
@@ -170,6 +183,8 @@ cd client
 npm run dev
 Frontend runs at: http://localhost:3000
 
+---
+
 📋 Step-by-Step Execution Summary
 1.Clone the repository.
 2.Install frontend and backend dependencies.
@@ -178,6 +193,8 @@ Frontend runs at: http://localhost:3000
 5.Open Terminal 2, navigate to client, and start the frontend with npm run dev.
 6.Open your browser at http://localhost:3000.
 7.Upload your tree images, run the AI analysis, and review the generated report.
+
+---
 
 🧪 Testing & Builds
 Currently, ARBOR AI does not contain a dedicated automated test suite.
@@ -192,6 +209,8 @@ node server.js
 
 cd server
 node server.js
+
+---
 
 🔧 Troubleshooting
 Port already in use
@@ -208,6 +227,8 @@ cd ../server && npm install
 
 Frontend cannot communicate with backend
 Make sure both servers are actively running in separate terminals (http://localhost:3000 and http://localhost:3001).
+
+---
 
 📖 Glossary
 
