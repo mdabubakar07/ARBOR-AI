@@ -69,7 +69,7 @@ ARBOR-AI/
 
 ---
 
-## ⚙️ Prerequisites
+# ⚙️ Prerequisites
 
 Install the following software before running ARBOR AI:
 - **Node.js**
@@ -87,7 +87,7 @@ git --version
 ---
 
 ---
-## ⚡ Quick Start
+# ⚡ Quick Start
 
 ### 1. Clone the Repository
 ```bash
@@ -152,7 +152,7 @@ Frontend runs at: http://localhost:3000
 
 ---
 
-### 📋 Step-by-Step Execution Summary
+# 📋 Step-by-Step Execution Summary
 
 1. Clone the repository.
 2. Install frontend and backend dependencies.
@@ -180,7 +180,7 @@ node server.js
 
 ---
 
-## 🔧 Troubleshooting
+# 🔧 Troubleshooting
 **Port already in use If port 3000 or 3001 is already occupied, stop the existing node process or configure an alternative port.**
 
 ### Gemini API errors
