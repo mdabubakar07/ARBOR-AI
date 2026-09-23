@@ -128,12 +128,12 @@ GEMINI_API_KEY    API key used for Gemini AI analysisPORTBackend server port🔒
 
 ---
 
-##▶️ Running ARBOR AI
-ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:
+## ▶️ Running ARBOR AI
+**ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:**
 
 ---
 
-###⚙️ Prerequisites
+### ⚙️ Prerequisites
 Install the following software before running ARBOR AI:
 
 Node.js
