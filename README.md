@@ -118,57 +118,24 @@ GEMINI_API_KEY=your_gemini_api_key_here
 PORT=3001
 ```
 
----
-
-### Variable          Description
+**Code snippet:**
 ```bash
-GEMINI_API_KEY    API key used for Gemini AI analysisPORTBackend server port🔒 Security
+GEMINI_API_KEY=your_gemini_api_key_here
+PORT=3001
 ```
+
+###Variable             	Description
+GEMINI_API_KEY      API key used for Gemini AI analysis
+PORT                Backend server port
+
 **Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.**
 
 ---
 
-## ▶️ Running ARBOR AI
-**ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:**
 
----
 
-### ⚙️ Prerequisites
-Install the following software before running ARBOR AI:
 
-Node.js
 
-npm
-
-Git
-
-Gemini API key
-
-Verify installations using your terminal:
-node --version
-npm --version
-git --version
-
----
-
-###⚡ Quick Start
-###1. Clone the Repository
-git clone [https://github.com/mdabubakar07/ARBOR-AI.git](https://github.com/mdabubakar07/ARBOR-AI.git)
-cd ARBOR-AI
-
-###2. Install Dependencies
-###Frontend:
-cd client
-npm install
-cd ..
-
-###Backend:
-cd server
-npm install
-cd ..
-
-###3. Configure Environment Variables
-Create a server/.env file based on server/.env.example:
 
 **Code snippet:**
 GEMINI_API_KEY=your_gemini_api_key_here
