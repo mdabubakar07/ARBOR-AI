@@ -124,48 +124,35 @@ GEMINI_API_KEY=your_gemini_api_key_here
 PORT=3001
 ```
 
-###Variable             	Description
+### Variable             	Description
 GEMINI_API_KEY      API key used for Gemini AI analysis
 PORT                Backend server port
 
-**Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.**
+**🔒 Security Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.**
+---
 
 ---
 
+## ▶️ Running ARBOR AI
+**ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:**
 
-
-
-
-
-**Code snippet:**
-GEMINI_API_KEY=your_gemini_api_key_here
-PORT=3001
-
-###Variable             	Description
-GEMINI_API_KEY      API key used for Gemini AI analysis
-PORT                Backend server port
-
----
-🔒 Security Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.
-
----
-
-##▶️ Running ARBOR AI
-ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:
-
-Terminal 1 (Backend)
+### Terminal 1 (Backend)
+```bash
 cd server
 node server.js
 Backend runs at: http://localhost:3001
+```
 
-Terminal 2 (Frontend)
+### Terminal 2 (Frontend)
+```bash
 cd client
 npm run dev
 Frontend runs at: http://localhost:3000
+```
 
 ---
 
-###📋 Step-by-Step Execution Summary
+### 📋 Step-by-Step Execution Summary
 1.Clone the repository.
 2.Install frontend and backend dependencies.
 3.Create server/.env and add your valid Gemini API key.
@@ -176,43 +163,44 @@ Frontend runs at: http://localhost:3000
 
 ---
 
-###🧪 Testing & Builds
+### 🧪 Testing & Builds
 Currently, ARBOR AI does not contain a dedicated automated test suite.
 
-To check the frontend build:
+**To check the frontend build:**
+```bash
 cd client
 npm run build
-
-To verify the backend starts correctly:
+```
+**To verify the backend starts correctly:**
+```bash
 cd server
 node server.js
-
-cd server
-node server.js
+```
 
 ---
 
-###🔧 Troubleshooting
-Port already in use
-If port 3000 or 3001 is already occupied, stop the existing node process or configure an alternative port.
+## 🔧 Troubleshooting
+**Port already in use If port 3000 or 3001 is already occupied, stop the existing node process or configure an alternative port.**
 
-Gemini API errors
-Verify that GEMINI_API_KEY is present in server/.env and that the key is valid and active.
+### Gemini API errors
+**Verify that GEMINI_API_KEY is present in server/.env and that the key is valid and active.**
 
-Missing dependencies
-Reinstall modules by running:
+### Missing dependencies
+**Reinstall modules by running:**
+```bash
 rm -rf client/node_modules server/node_modules
 cd client && npm install
 cd ../server && npm install
+```
 
-Frontend cannot communicate with backend
-Make sure both servers are actively running in separate terminals (http://localhost:3000 and http://localhost:3001).
+### Frontend cannot communicate with backend
+**Make sure both servers are actively running in separate terminals (http://localhost:3000 and http://localhost:3001).**
 
 ---
 
-##📖 Glossary
+## 📖 Glossary
 
-Term                                   Meaning
+***Term                                   Meaning**
 Frontend                  User-facing Next.js application
 Backend                   Node.js server responsible for API processing
 API                       Interface allowing software components to communicate
@@ -224,7 +212,6 @@ Express.js                Node.js web application framework
 Repository                Project's version-controlled GitHub workspace
 
 
-###🌱 Project Objective
-ARBOR AI explores the use of artificial intelligence and image analysis to provide accessible, structured insights into tree health.
-
-Turning tree images into intelligent health insights.
+### 🌱 Project Objective
+**ARBOR AI explores the use of artificial intelligence and image analysis to provide accessible, structured insights into tree health.**
+**Turning tree images into intelligent health insights.**
