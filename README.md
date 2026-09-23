@@ -67,28 +67,31 @@ ARBOR-AI/
 ```
 ---
 
-##⚙️ Prerequisites
-###Install the following software before running ARBOR AI:
+---
 
-Node.js
+## ⚙️ Prerequisites
 
-npm
+Install the following software before running ARBOR AI:
+- **Node.js**
+- **npm**
+- **Git**
+- **Gemini API key**
 
-Git
-
-###Gemini API key
-
-###Verify installations using your terminal:
+Verify installations using your terminal:
+```bash
 node --version
 npm --version
 git --version
+```
 
 ---
 
 ##⚡ Quick Start
 ###1. Clone the Repository
+```bash
 git clone [https://github.com/mdabubakar07/ARBOR-AI.git](https://github.com/mdabubakar07/ARBOR-AI.git)
 cd ARBOR-AI
+```
 
 ###2. Install Dependencies
 
