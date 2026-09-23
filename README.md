@@ -102,11 +102,14 @@ cd ARBOR-AI
 cd client
 npm install
 cd ..
+```
 
-###Backend:
+**Backend:**
+```bash
 cd server
 npm install
 cd ..
+```
 
 ###3. Configure Environment Variables
 Create a server/.env file based on server/.env.example:
