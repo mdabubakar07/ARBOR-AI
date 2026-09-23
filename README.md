@@ -198,7 +198,7 @@ cd ../server && npm install
 **Make sure both servers are actively running in separate terminals (http://localhost:3000 and http://localhost:3001).**
 
 ---
-### 📖 Glossary
+# 📖 Glossary
 
 | Term | Meaning |
 | :--- | :--- |
