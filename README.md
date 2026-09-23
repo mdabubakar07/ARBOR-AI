@@ -95,10 +95,10 @@ git clone [https://github.com/mdabubakar07/ARBOR-AI.git](https://github.com/mdab
 cd ARBOR-AI
 ```
 
-###2. Install Dependencies
+### 2. Install Dependencies
 
-###Frontend:
-Bash
+**Frontend:**
+```bash
 cd client
 npm install
 cd ..
