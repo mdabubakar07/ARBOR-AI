@@ -46,7 +46,7 @@ ARBOR AI combines a modern Next.js frontend with a Node.js/Express backend and t
 
 ## 📁 Project Structure
 
-```text
+
 ARBOR-AI/
 ├── client/                 # Next.js frontend
 │   ├── app/
@@ -67,8 +67,8 @@ ARBOR-AI/
 
 ---
 
-⚙️ Prerequisites
-Install the following software before running ARBOR AI:
+##⚙️ Prerequisites
+###Install the following software before running ARBOR AI:
 
 Node.js
 
@@ -76,51 +76,52 @@ npm
 
 Git
 
-Gemini API key
+###Gemini API key
 
-Verify installations using your terminal:
+###Verify installations using your terminal:
 node --version
 npm --version
 git --version
 
 ---
 
-⚡ Quick Start
-1. Clone the Repository
+##⚡ Quick Start
+###1. Clone the Repository
 git clone [https://github.com/mdabubakar07/ARBOR-AI.git](https://github.com/mdabubakar07/ARBOR-AI.git)
 cd ARBOR-AI
 
-2. Install Dependencies
+###2. Install Dependencies
 
-Frontend:
+###Frontend:
 Bash
 cd client
 npm install
 cd ..
 
-Backend:
+###Backend:
 cd server
 npm install
 cd ..
 
-3. Configure Environment Variables
+###3. Configure Environment Variables
 Create a server/.env file based on server/.env.example:
 
-Code snippet
+###Code snippet
 GEMINI_API_KEY=your_gemini_api_key_here
 PORT=3001
 
-VariableDescriptionGEMINI_API_KEYAPI key used for Gemini AI analysisPORTBackend server port🔒 Security
+###Variable          Description
+GEMINI_API_KEY    API key used for Gemini AI analysisPORTBackend server port🔒 Security
 Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.
 
 ---
 
-▶️ Running ARBOR AI
+##▶️ Running ARBOR AI
 ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:
 
 ---
 
-⚙️ Prerequisites
+###⚙️ Prerequisites
 Install the following software before running ARBOR AI:
 
 Node.js
@@ -138,30 +139,30 @@ git --version
 
 ---
 
-⚡ Quick Start
-1. Clone the Repository
+###⚡ Quick Start
+###1. Clone the Repository
 git clone [https://github.com/mdabubakar07/ARBOR-AI.git](https://github.com/mdabubakar07/ARBOR-AI.git)
 cd ARBOR-AI
 
-2. Install Dependencies
-Frontend:
+###2. Install Dependencies
+###Frontend:
 cd client
 npm install
 cd ..
 
-Backend:
+###Backend:
 cd server
 npm install
 cd ..
 
-3. Configure Environment Variables
+###3. Configure Environment Variables
 Create a server/.env file based on server/.env.example:
 
-Code snippet
+###Code snippet
 GEMINI_API_KEY=your_gemini_api_key_here
 PORT=3001
 
-Variable             	Description
+###Variable             	Description
 GEMINI_API_KEY      API key used for Gemini AI analysis
 PORT                Backend server port
 
@@ -170,7 +171,7 @@ PORT                Backend server port
 
 ---
 
-▶️ Running ARBOR AI
+##▶️ Running ARBOR AI
 ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:
 
 Terminal 1 (Backend)
@@ -185,7 +186,7 @@ Frontend runs at: http://localhost:3000
 
 ---
 
-📋 Step-by-Step Execution Summary
+###📋 Step-by-Step Execution Summary
 1.Clone the repository.
 2.Install frontend and backend dependencies.
 3.Create server/.env and add your valid Gemini API key.
@@ -196,7 +197,7 @@ Frontend runs at: http://localhost:3000
 
 ---
 
-🧪 Testing & Builds
+###🧪 Testing & Builds
 Currently, ARBOR AI does not contain a dedicated automated test suite.
 
 To check the frontend build:
@@ -212,7 +213,7 @@ node server.js
 
 ---
 
-🔧 Troubleshooting
+###🔧 Troubleshooting
 Port already in use
 If port 3000 or 3001 is already occupied, stop the existing node process or configure an alternative port.
 
@@ -230,7 +231,7 @@ Make sure both servers are actively running in separate terminals (http://localh
 
 ---
 
-📖 Glossary
+##📖 Glossary
 
 Term                                   Meaning
 Frontend                  User-facing Next.js application
@@ -244,7 +245,7 @@ Express.js                Node.js web application framework
 Repository                Project's version-controlled GitHub workspace
 
 
-🌱 Project Objective
+###🌱 Project Objective
 ARBOR AI explores the use of artificial intelligence and image analysis to provide accessible, structured insights into tree health.
 
 Turning tree images into intelligent health insights.
