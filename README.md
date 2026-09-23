@@ -23,23 +23,22 @@ ARBOR AI combines a modern Next.js frontend with a Node.js/Express backend and t
 
 ## 🛠️ Tech Stack
 
-**Frontend**
+### Frontend
 - Next.js
 - React
 - TypeScript
 - Tailwind CSS
 
-**Backend**
+### Backend
 - Node.js
 - Express.js
 - JavaScript
 
-**AI**
+### AI
 - Google Gemini API
 
-**Tools**
-- Git
-- GitHub
+### Tools
+- Git / GitHub
 - npm
 - Visual Studio Code
 
@@ -67,219 +66,164 @@ ARBOR-AI/
 └── README.md
 
 ⚙️ Prerequisites
-
-Install the following before running ARBOR AI:
+Install the following software before running ARBOR AI:
 
 Node.js
+
 npm
+
 Git
+
 Gemini API key
 
-Verify installation:
-
+Verify installations using your terminal:
 node --version
 npm --version
 git --version
+
 ⚡ Quick Start
 1. Clone the Repository
-git clone https://github.com/mdabubakar07/ARBOR-AI.git
+git clone [https://github.com/mdabubakar07/ARBOR-AI.git](https://github.com/mdabubakar07/ARBOR-AI.git)
 cd ARBOR-AI
+
 2. Install Dependencies
-Frontend
-cd client
-npm install
-cd ..
-Backend
-cd server
-npm install
-cd ..
-🔐 Environment Variables
-
-Create:
-
-server/.env
-
-based on:
-
-server/.env.example
-
-Add:
-
-GEMINI_API_KEY=your_gemini_api_key_here
-PORT=3001
-Environment Variables
-Variable	Description
-GEMINI_API_KEY	API key used for Gemini AI analysis
-PORT	Backend server port
-
-Security: Never commit server/.env or expose your API key. The root .gitignore already excludes .env.
-
-▶️ Running ARBOR AI
-
-ARBOR AI requires two running servers.
-
-Frontend
-
-From the project root:
-
-cd client
-npm run dev
 
 Frontend:
-
-http://localhost:3000
-Backend
-
-Open a second VS Code terminal:
-
-cd server
-node server.js
-
-Backend:
-
-http://localhost:3001
-
-Keep both terminals running while using the application.
-
-📋 Step-by-Step Execution
-Clone the repository.
-Install frontend dependencies.
-Install backend dependencies.
-Create server/.env.
-Add your Gemini API key.
-Start the backend with node server.js.
-Start the frontend with npm run dev.
-Open http://localhost:3000.
-Upload a tree image.
-Run the AI analysis and review the generated report.
-📦 One-Click Setup & Run
-
-Unix-like shell / Bash
-
-Copy and paste the following block from the project root:
-
-# Install frontend dependencies
+Bash
 cd client
 npm install
-
-# Install backend dependencies
-cd ../server
-npm install
-
-# Return to project root
 cd ..
 
-# Start backend
-(cd server && node server.js) &
+Backend:
+cd server
+npm install
+cd ..
 
-# Start frontend
+3. Configure Environment Variables
+Create a server/.env file based on server/.env.example:
+
+Code snippet
+GEMINI_API_KEY=your_gemini_api_key_here
+PORT=3001
+
+VariableDescriptionGEMINI_API_KEYAPI key used for Gemini AI analysisPORTBackend server port🔒 Security
+Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.
+
+▶️ Running ARBOR AI
+ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:
+
+⚙️ Prerequisites
+Install the following software before running ARBOR AI:
+
+Node.js
+
+npm
+
+Git
+
+Gemini API key
+
+Verify installations using your terminal:
+node --version
+npm --version
+git --version
+
+⚡ Quick Start
+1. Clone the Repository
+git clone [https://github.com/mdabubakar07/ARBOR-AI.git](https://github.com/mdabubakar07/ARBOR-AI.git)
+cd ARBOR-AI
+
+2. Install Dependencies
+Frontend:
+cd client
+npm install
+cd ..
+
+Backend:
+cd server
+npm install
+cd ..
+
+3. Configure Environment Variables
+Create a server/.env file based on server/.env.example:
+
+Code snippet
+GEMINI_API_KEY=your_gemini_api_key_here
+PORT=3001
+
+Variable             	Description
+GEMINI_API_KEY      API key used for Gemini AI analysis
+PORT                Backend server port
+
+🔒 Security Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.
+
+▶️ Running ARBOR AI
+ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:
+
+Terminal 1 (Backend)
+cd server
+node server.js
+Backend runs at: http://localhost:3001
+
+Terminal 2 (Frontend)
 cd client
 npm run dev
+Frontend runs at: http://localhost:3000
 
-Before running the application, make sure server/.env exists and contains a valid GEMINI_API_KEY.
+📋 Step-by-Step Execution Summary
+1.Clone the repository.
+2.Install frontend and backend dependencies.
+3.Create server/.env and add your valid Gemini API key.
+4.Open Terminal 1, navigate to server, and start the backend with node server.js.
+5.Open Terminal 2, navigate to client, and start the frontend with npm run dev.
+6.Open your browser at http://localhost:3000.
+7.Upload your tree images, run the AI analysis, and review the generated report.
 
-🧪 Tests
-
+🧪 Testing & Builds
 Currently, ARBOR AI does not contain a dedicated automated test suite.
 
 To check the frontend build:
-
 cd client
 npm run build
 
 To verify the backend starts correctly:
-
 cd server
 node server.js
 
-If automated tests are added later, they should be exposed through the corresponding package.json test script.
+cd server
+node server.js
 
 🔧 Troubleshooting
 Port already in use
-
-If port 3000 or 3001 is already occupied, stop the existing process or configure another port.
+If port 3000 or 3001 is already occupied, stop the existing node process or configure an alternative port.
 
 Gemini API errors
+Verify that GEMINI_API_KEY is present in server/.env and that the key is valid and active.
 
-Verify:
-
-GEMINI_API_KEY
-
-is present in:
-
-server/.env
-
-and that the key is valid.
-
-Dependencies missing
-
-Run:
-
-cd client
-npm install
-
-cd ../server
-npm install
-Frontend cannot communicate with backend
-
-Make sure both servers are running:
-
-Frontend → http://localhost:3000
-Backend  → http://localhost:3001
-Build problems
-
-Try reinstalling dependencies:
-
+Missing dependencies
+Reinstall modules by running:
 rm -rf client/node_modules server/node_modules
 cd client && npm install
 cd ../server && npm install
+
+Frontend cannot communicate with backend
+Make sure both servers are actively running in separate terminals (http://localhost:3000 and http://localhost:3001).
+
 📖 Glossary
-Term	Meaning
-Frontend	User-facing Next.js application
-Backend	Node.js server responsible for API processing
-API	Interface allowing software components to communicate
-Gemini API	AI service used for tree-image analysis
-Environment Variable	Configuration value stored outside source code
-npm	Node.js package manager
-Next.js	React-based frontend framework
-Express.js	Node.js web application framework
-Repository	Project's version-controlled GitHub workspace
-🔒 Security
 
-Never commit sensitive credentials.
+Term                                   Meaning
+Frontend                  User-facing Next.js application
+Backend                   Node.js server responsible for API processing
+API                       Interface allowing software components to communicate
+Gemini API                AI service used for tree-image analysis
+Environment Variable      Configuration value stored outside source code
+npm                       Node.js package manager
+Next.js                   React-based frontend framework
+Express.js                Node.js web application framework
+Repository                Project's version-controlled GitHub workspace
 
-The repository intentionally keeps:
-
-server/.env
-
-out of Git while providing:
-
-server/.env.example
-
-as the configuration template.
 
 🌱 Project Objective
-
 ARBOR AI explores the use of artificial intelligence and image analysis to provide accessible, structured insights into tree health.
 
 Turning tree images into intelligent health insights.
-
-
-### One important point about the Bash block
-
-The block above is designed to be pasted into a **Unix-like Bash terminal**. It starts the backend in the background and then starts the frontend in the foreground, so both can run from one terminal.
-
-For your normal **Windows PowerShell + VS Code workflow**, I recommend continuing with the two-terminal method:
-
-**Terminal 1**
-```powershell
-cd server
-node server.js
-
-Terminal 2
-
-cd client
-npm run dev
-
-That is clearer for development and makes backend/frontend errors much easier to see.
-
