@@ -1,3 +1,5 @@
+<h1 align="center">Welcome to ARBOR-AI 👋</h1>
+
 # 🌳 ARBOR AI
 
 > **AI-Powered Tree Health Management System** — a full-stack application that analyzes tree images using AI and generates structured health insights, potential problems, recommendations, and treatment guidance.
