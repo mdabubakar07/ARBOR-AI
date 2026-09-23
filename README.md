@@ -198,20 +198,19 @@ cd ../server && npm install
 **Make sure both servers are actively running in separate terminals (http://localhost:3000 and http://localhost:3001).**
 
 ---
-
 ## 📖 Glossary
 
-***Term                                   Meaning**
-Frontend                  User-facing Next.js application
-Backend                   Node.js server responsible for API processing
-API                       Interface allowing software components to communicate
-Gemini API                AI service used for tree-image analysis
-Environment Variable      Configuration value stored outside source code
-npm                       Node.js package manager
-Next.js                   React-based frontend framework
-Express.js                Node.js web application framework
-Repository                Project's version-controlled GitHub workspace
-
+| Term | Meaning |
+| :--- | :--- |
+| Frontend | User-facing Next.js application |
+| Backend | Node.js server responsible for API processing |
+| API | Interface allowing software components to communicate |
+| Gemini API | AI service used for tree-image analysis |
+| Environment Variable | Configuration value stored outside source code |
+| npm | Node.js package manager |
+| Next.js | React-based frontend framework |
+| Express.js | Node.js web application framework |
+| Repository | Project's version-controlled GitHub workspace |
 
 ### 🌱 Project Objective
 **ARBOR AI explores the use of artificial intelligence and image analysis to provide accessible, structured insights into tree health.**
