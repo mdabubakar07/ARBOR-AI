@@ -67,8 +67,6 @@ ARBOR-AI/
 ```
 ---
 
----
-
 # ⚙️ Prerequisites
 
 Install the following software before running ARBOR AI:
@@ -86,7 +84,6 @@ git --version
 
 ---
 
----
 # ⚡ Quick Start
 
 ### 1. Clone the Repository
@@ -129,7 +126,6 @@ GEMINI_API_KEY      API key used for Gemini AI analysis
 PORT                Backend server port
 
 🔒Security Notice: Never commit server/.env or expose your API key. The root .gitignore already excludes .env files.
----
 
 ---
 
@@ -164,7 +160,7 @@ Frontend runs at: http://localhost:3000
    
 ---
 
-### 🧪 Testing & Builds
+# 🧪 Testing & Builds
 Currently, ARBOR AI does not contain a dedicated automated test suite.
 
 **To check the frontend build:**
