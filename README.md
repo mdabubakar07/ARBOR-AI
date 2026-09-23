@@ -129,7 +129,7 @@ PORT                Backend server port
 
 ---
 
-## ▶️ Running ARBOR AI
+# ▶️ Running ARBOR AI
 **ARBOR AI requires two running servers simultaneously. For the standard Windows PowerShell + VS Code workflow, use two separate terminals:**
 
 ### Terminal 1 (Backend)
