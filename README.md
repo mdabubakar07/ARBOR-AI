@@ -112,11 +112,13 @@ cd ..
 ```
 
 ###3. Configure Environment Variables
-Create a server/.env file based on server/.env.example:
 
-###Code snippet
+Create a server/.env file based on server/.env.example:
+```bash
+Code snippet
 GEMINI_API_KEY=your_gemini_api_key_here
 PORT=3001
+```
 
 ###Variable          Description
 GEMINI_API_KEY    API key used for Gemini AI analysisPORTBackend server port🔒 Security
